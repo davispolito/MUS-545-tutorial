@@ -4,11 +4,11 @@ This tutorial will walk you through the steps needed to get your computer ready 
 
 
 ### Steps
-[0.1 An Intro to the Terminal]()
+[0.1 An Intro to the Terminal](#01-an-intro-to-the-terminal)
 
 [1. Install Homebrew](#1-install-homebrew)
 
-[2. Install VSCode](#2-install-VSCode)
+[2. Install VSCode and Xcode](#2-install-VSCode-and-xcode)
 
 [3. Install git](#3-install-git)
 
@@ -95,7 +95,7 @@ paste the below code and press enter. The terminal will prompt you about what it
  ```
 if you like videos [this](https://www.youtube.com/watch?v=UTon_5ouqTM) covers homebrew and git. 
 
-## 2. Install VSCode
+## 2. Install VSCode and Xcode
 run the following command from the command line (terminal)
 
 ```
@@ -111,6 +111,11 @@ Once it is open use hotkey `cmd-shift-p` and then type and run
 Shell Command: Install 'Code' command in path
 ```
 
+Also install Xcode command line tools
+
+```
+xcode-select --install
+```
 ## 3. Install git
 
 
