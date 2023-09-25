@@ -8,15 +8,21 @@ This tutorial will walk you through the steps needed to get your computer ready 
 
 [1. Install Homebrew](#1-install-homebrew)
 
-[2. Install git]()
+[2. Install VSCode](#2-install-VSCode)
 
-[3. Set up git environment]()
+[3. Install git](#3-install-git)
 
-[4. Install python]()
+[3. Set up git environment](#3-set-up-git-environment)
 
-[5. Set Up Daisy Toolchain]()
+[3.1 Setup git ssh-keys](#31-set-up-git-ssh-keys)
 
-[6. Set Up LEAF]()
+[4. Intro to git](#4-intro-to-git)
+
+[5. Install python](#5-install-python)
+
+[6. Set Up Daisy Toolchain](#6-set-up-daisy-toolchain)
+
+[7. Set Up LEAF](#7-set-up-leaf)
 
 
 ## 0.1 An Intro to the Terminal 
@@ -162,7 +168,7 @@ Host github.com
 
 > - use `ctrl-x` to exit and then press `y` to save
 
-## 4. A tour of git
+## 4. Intro to git
 
 Now that you have set up `git` we can learn what it does. `git` is a version control system. 
 
@@ -309,13 +315,13 @@ now if we checkout our repo online we can see that our 2 commits are there!
 
 ![](online.png)
 
-## 4. Install Python
+## 5. Install Python
 
 ```
 brew install python
 ```
 
-## 5. Set up Daisy Toolchain
+## 6. Set up Daisy Toolchain
 
 Alright! Now that you want to drop this class let's figure out how we're gonna use this little yellow board. 
 
@@ -362,7 +368,7 @@ Now let's figure out how to make our own project
 
 WE've already set up the dev environment and installed python. now we just need to create our first projcet using the helper script
 
-## 3. Using the Helper Script
+### 1. Using the Helper Script
 helper.py is a python script from DaisyExamples that can be used for several helpful utilities.  
 
 **macOS troubleshooting:** 
@@ -397,7 +403,7 @@ To see a full list of available board targets, enter the following command:
 ```
 
 
-## 4. Compiling
+### 2. Compiling
 - Open your project in VS Code.
   - Open VS Code.
   - Click `File > Open Folder`
@@ -408,6 +414,9 @@ To see a full list of available board targets, enter the following command:
 - If you receive an error related to libDaisy or DaisySP, make sure to build your libs by running `task build_all`. This will build the libraries.
 - Refer to step 3 of the [Development Environment](https://github.com/electro-smith/DaisyWiki/wiki/1.-Setting-Up-Your-Development-Environment#4-Run-the-Blink-Example) guide for help flashing your project to the Daisy.
 
-## 5. Troubleshooting
+### 3. Troubleshooting
 
 Please refer to the [troubleshooting page](https://github.com/electro-smith/DaisyWiki/wiki/7.-Troubleshooting).
+
+
+## 6. set up LEAF
