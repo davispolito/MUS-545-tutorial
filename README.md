@@ -47,7 +47,7 @@ Now that we know where we are we may want to go somewhere else. To do that we us
 
 ![](cd.png)
 
-Note that I moved to the Documents directory rather than the Desktop. I prefer to put my files in documents so I don't clutter my Desktop. You can put files for your projects wherever. I don't care. It's your funeral. 
+Note that I moved to the Documents directory rather than the Desktop. I prefer to put my files in documents so I don't clutter my Desktop. You can put files for your projects wherever. 
 
 If for example you have a class folder on your computer but you don't want to cascade a million `cd` commands to get to it you can open a finder window and drag it into the terminal after a cd command and it will paste the full directory name into your terminal like so.  
 ![](drag.gif)
