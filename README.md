@@ -142,7 +142,7 @@ Enter a file in which to save the key (/Users/YOU/.ssh/id_ALGORITHM): [Press ent
 
 > 3. Adding your SSH key to the ssh-agent
 > - Start the ssh-agent in the background. 
-> - the `$` before the command eval is just showing that its at the terminal.  
+> - the `$` before the command eval is just showing that its at the terminal.  Do not paste this symbol into the terminal when it is at the beginning of the line
 > - the `>` is showing what the command should print out
 ```
 $ eval "$(ssh-agent -s)"
