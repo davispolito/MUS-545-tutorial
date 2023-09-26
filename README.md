@@ -28,29 +28,29 @@ This tutorial will walk you through the steps needed to get your computer ready 
 ## 0.1 An Intro to the Terminal 
 
 First things first lets open up a terminal. If you have never opened up terminal it can be found by using spotlight search. 
-![](spotlight.png)
+![](photos/spotlight.png)
 
 Now you will have an application window open that looks something like this
 
-![](terminal.png)
+![](photos/terminal.png)
 
 This is your terminal also referred to as the command line. This is how you interacted with computers before Graphical User Interfaces (GUIs) existed. There are lots of ways to interact with the terminal but I will only show you the commands you may need to feel comfortable setting up your environment for this class.  Most of what I am about to explain can be found in this [video](https://www.youtube.com/watch?v=aKRYQsKR46I) if that is more your speed. 
 
 Anyway lets first figure out where we are. When your computer turns on the first thing you see after logging is the Desktop. You may know that the Desktop is a folder in your User as shown here in the finder window.
-![](finder1.png)
+![](photos/finder1.png)
 
 When you first open terminal you are actually one folder above that Desktop folder. The `~` you see on your terminal represents that directory at all times. You can see that by using cmd `pwd` which means 'print working directory'
 
-![](pwd.png)
+![](photos/pwd.png)
 
 Now that we know where we are we may want to go somewhere else. To do that we use `cd` (change directory)
 
-![](cd.png)
+![](photos/cd.png)
 
 Note that I moved to the Documents directory rather than the Desktop. I prefer to put my files in documents so I don't clutter my Desktop. You can put files for your projects wherever. 
 
 If for example you have a class folder on your computer but you don't want to cascade a million `cd` commands to get to it you can open a finder window and drag it into the terminal after a cd command and it will paste the full directory name into your terminal like so.  
-![](drag.gif)
+![](photos/drag.gif)
 
 (note the `\ ` convention where there is white space in your directory names. This is so the terminal can interpret the spacebar)
 
@@ -58,13 +58,13 @@ If for example you have a class folder on your computer but you don't want to ca
 
 Now that we are in our preferred directory (folders are referred to as directories (forgot to mention that)). We may want to look around and see what files or subdirectories (a folder within a folder...ception) are in the folder. To do this we use the `ls` (list) command.
 
-![](lss.png)
+![](photos/lss.png)
 
 So we have gotten to where we want to be for our projects but we want to add a new folder from the terminal. We can do that with the `mkdir` (make directory) command. 
 
 The convention would be to call this folder `dev` or `develop` so thats what I'll call it. 
 
-![](dev.png)
+![](photos/dev.png)
 
 
 You won't see anything change but you have made a new empty folder which you can `cd` into and look around. You can also open this folder in finder using the `open`
@@ -74,7 +74,7 @@ Now is the point where i accidentally exited my terminal and will cd back into t
 
 Also the terminal has tab completion
 
-![](cd2.png)
+![](photos/cd2.png)
 
 
 Here is a list of all the cmds you need to move around
@@ -96,7 +96,7 @@ paste the below code and press enter. The terminal will prompt you about what it
 
 the output will look something like this at the end
 
-![](brewpath.png)
+![](photos/brewpath.png)
 
 If you look at **Next Steps** it will tell you to add homebrew to your PATH. It does this by putting it into your .zprofile. The zprofile is a file that gets run by your terminal everytime it opens. 
 
@@ -215,7 +215,7 @@ So lets `cd` to a new folder that we are going to use to create a dummy git repo
 
 Once in that folder we can call ```git init``` to create a new repo 
 
-![](init.png)
+![](photos/init.png)
 
 Here it says we have created an empty git repo and that we are using 'master' as our default branch name and that we can easily change that from the command line so let's do that! I'll use `main` as my new default branch name.
 
@@ -234,7 +234,7 @@ Let's see if that changed anything in our repo!
 
 You can check the repo using the ```git status ``` command
 
-![](status.png)
+![](photos/status.png)
 
 looks like our file isnt in the repo but there is a helpful hint that tells us you can use the ```git add <file>``` command.
 
@@ -246,7 +246,7 @@ So now that we have added it to the commit let's make a commit.
 
 ```git commit -m "My First Commit!"```
 
-![](commit.png)
+![](photos/commit.png)
 
 Now our empty file has been added to the git repo! 
 
@@ -268,7 +268,7 @@ Add the following at the end of the file to use VS Code as diff tool.
 ```
 Now lets open up our repo in VSCode! Use the command ```code .``` to take us there. 
 
-![](vscode.png)
+![](photos/vscode.png)
 
 
 
@@ -286,7 +286,7 @@ You can go ahead and type the usual "Hello World!" into this file and call it a 
 You can then go back to the terminal run a ```git status ``` and git will show that the file has been modified 
 > - there is also a convenient terminal in vscode if you pull the bottom of the window up 
 
-![](pullup.gif)
+![](photos/pullup.gif)
 
 We can now add the changes to the file to our repo. 
 
@@ -297,13 +297,13 @@ We can now add the changes to the file to our repo.
 If you use the ```git log``` command you can now see that we have two commits we can see in our repository
 
 
-![](log.png)
+![](photos/log.png)
 
 Now if we wanted to return to the previous commit we could just copy it and call the ```git checkout <hash>``` command
 > - the term hash is a unique identifier generated by the coomputer that is used to represent a commit
 
 
-![](hash.png)
+![](photos/hash.png)
 
 If you read the output of this function it will explain a lot of what it is. From here we can overwrite the repo and remove our previous commit or even branch off to a new commit. 
 
@@ -315,7 +315,7 @@ Branching allows us to create unique directions for our project that can later b
 
 For example if this repo were a musical composition I could create a branch where i work on the drum track and a branch where I work on the guitar track. These two branches would function independently until I merged them together! This functionality won't be super important for our efforts but it is useful to know. Below is an example of adding some branches and switching between them. 
 
-![](branch.png)
+![](photos/branch.png)
 
 
 Lastly, we want to push our repo to github. For this we will have to go to github.com and create a repo so we can push our local repo to it. 
@@ -334,11 +334,11 @@ git push -u origin main
 
 so lets do that! 
 
-![](push.png)
+![](photos/push.png)
 
 now if we checkout our repo online we can see that our 2 commits are there!
 
-![](online.png)
+![](photos/online.png)
 
 ## 5. Install Python
 
@@ -366,7 +366,7 @@ We will be creating our own programs and thus need have to set up a development 
 
   > This file will show up as quarantined if you just click on it. If you right-click Open it you will get a prompt asking you if you really want to open it and then it'll run fine. Alternatively if you just click it you'll get an error until you remove it from quarantine in the settings. 
 
-  ![](quarantine.png)
+  ![](photos/quarantine.png)
   > Once you agree to all the stuff it will install a bunch of malware on your computer and you'll be done! 
 
 Now if we go back to the [1. Setting Up Your Development Environment](https://github.com/electro-smith/DaisyWiki/wiki/1.-Setting-Up-Your-Development-Environment)
@@ -385,7 +385,7 @@ This command clones the repo to our Desktop but you can replace ~/Desktop/DaisyE
 - Search for Cortex Debug
 - Find the extension by marus25 and install, it should be the top result
 
-![](debug.png)
+![](photos/debug.png)
 
 Now let's figure out how to make our own project
 
@@ -465,5 +465,83 @@ Folder
 
 We will use this directory structure to access LEAF from our projects. 
 
-I have included a zip of a working directory that allows for the use of Leaf. It assumes it is in the DaisyExamples 
+I have included a zip of a working directory that allows you to use LEAF. It assumes the currentProj is in the DaisyExamples like so ```DaisyExamples/MyProjects/MyProj/```. So you must be sure to move the folder into the MyProjects folder in DaisyExamples (or any other folder directly below DaisyExamples). You are welcome to use this as your template going forward but I strongly encourage you to follow along to see the changes I made. The more you know and what not. 
+
+The location is important to note because we will use the `..` thingy to access the folders above our project folder. Understanding this is useful in the event that you move your folders around because you will get errors since the compiler can't find your folders. 
+
+If you open your Project folder in VSCode you will see a folder called .vscode. Within this folder open up "c_cpp_properties.json". 
+![](photos/properties.png)
+
+Under the "includePath" property you will notice I have added a the path to LEAF. If you are in the directory as stated above you can simply copy this line into your file. Note there are two seperate configurations. One is for windows and one for mac. Technically you only need to set this for the mac one but we might as well do it for both. 
+
+```
+"${workspaceFolder}/../../../LEAF/leaf//**"
+```
+
+
+Now we will open the ```tasks.json``` file and edit that 
+
+In here you will see a bunch of "tasks" that look like this 
+```
+"command": "make clean; make; make program",
+      "label": "build_and_program",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "type": "shell"
+```
+
+The details of these tasks are not of particular importance but their function is to build all your libraries in the terminal so that you can call these functions within VSCode. 
+
+Right now you can see around line 40 their is a task labeled "build_all" and it "dependsOn"  ```build_libdaisy``` and ```build_daisysp```. Those are the daisy libraries. If you navigate to somewhere around lines 85 and 98 you will see how those cmds are called. We want to do the same thing for leaf. 
+
+You can also find these things using ```CMD-F``` and typing them in.
+
+So, at the end of our tasks we need to add this 
+
+```
+{
+      "command": "make",
+      "label": "build_leaf",
+      "options": {
+        "cwd": "${workspaceFolder}/../../../LEAF/leaf/"
+    
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "type": "shell"
+    }
+
+```
+
+It should look something  like this
+
+![](photos/tasks.png)
+
+Now we can add build_leaf as a necessary dependency
+
+under "build_all" and "build_all_debug" add the "build_leaf" task to the dependsOn array. 
+![](photos/build_leaf.png)
+
+Now we are almost there! 
+
+Now VSCode knows that these libraries must be built with the tasks but our project has no information about how to compile LEAF. Compilation is the process that turns our C code into the actual 0s and 1s that our CPU can read. This task is accomplished by a Makefile. Now if you add these lines to the Makefile before the include you should be able to build
+
+```
+LIBS += -lleaf
+LIBDIR += -L ../../../LEAF/leaf/build
+C_INCLUDES += -I../../../LEAF/leaf/Src
+
+```
+
+in order to build in VSCode we press ```CMD-P``` and type ```task build_all```
+
+Now you pray to the Computer and if all is well you will get output that looks something like this 
+![](photos/build_all.png)
+
+
 
