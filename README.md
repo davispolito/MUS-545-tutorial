@@ -93,6 +93,26 @@ paste the below code and press enter. The terminal will prompt you about what it
 ``` 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
  ```
+
+the output will look something like this at the end
+
+![](brewpath.png)
+
+If you look at **Next Steps** it will tell you to add homebrew to your PATH. It does this by putting it into your .zprofile. The zprofile is a file that gets run by your terminal everytime it opens. 
+
+```
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/<YOU>/.zprofile
+
+eval "$(/opt/homebrew/bin/brew shellenv)" 
+```
+> - ```echo``` displays text 
+> - ```>>``` sends your output somewhere (in this case a file)
+> - ```echo 'something' >> <file>``` outputs the text 'something' to the file specified
+
+The eval command is adding the brew command to your PATH so that you can see it in your terminal. 
+
+We run it outside the zprofile here because the zprofile only gets run once when terminal is opened. 
+
 if you like videos [this](https://www.youtube.com/watch?v=UTon_5ouqTM) covers homebrew and git. 
 
 ## 2. Install VSCode and Xcode
@@ -425,3 +445,25 @@ Please refer to the [troubleshooting page](https://github.com/electro-smith/Dais
 
 
 ## 6. set up LEAF
+
+
+Now if you only wanted to use the Daisy Libraries and DSP objects you would be done. Unfortunately, there is still work to do. 
+
+navigate to just outside of your DaisyExamples folder and clone [leaf](https://github.com/spiricom/LEAF.git)
+
+```
+git clone git@github.com:spiricom/LEAF.git
+```
+
+![leaf](leaf.png)
+*press the blue code button to get the link needed for cloning*
+
+It is important that DaisyExamples and LEAF are on the same directory level i.e.
+Folder
+  DaisyExamples
+  LEAF
+
+We will use this directory structure to access LEAF from our projects. 
+
+I have included a zip of a working directory that allows for the use of Leaf. It assumes it is in the DaisyExamples 
+
