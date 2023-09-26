@@ -47,7 +47,7 @@ Now that we know where we are we may want to go somewhere else. To do that we us
 
 ![](cd.png)
 
-Note that I moved to the Documents directory rather than the Desktop. I prefer to put my files in documents so I don't clutter my Desktop. You can put files for your projects wherever. I don't care. It's your funeral. 
+Note that I moved to the Documents directory rather than the Desktop. I prefer to put my files in documents so I don't clutter my Desktop. You can put files for your projects wherever. 
 
 If for example you have a class folder on your computer but you don't want to cascade a million `cd` commands to get to it you can open a finder window and drag it into the terminal after a cd command and it will paste the full directory name into your terminal like so.  
 ![](drag.gif)
@@ -162,7 +162,7 @@ Enter a file in which to save the key (/Users/YOU/.ssh/id_ALGORITHM): [Press ent
 
 > 3. Adding your SSH key to the ssh-agent
 > - Start the ssh-agent in the background. 
-> - the `$` before the command eval is just showing that its at the terminal.  
+> - the `$` before the command eval is just showing that its at the terminal.  Do not paste this symbol into the terminal when it is at the beginning of the line
 > - the `>` is showing what the command should print out
 ```
 $ eval "$(ssh-agent -s)"
