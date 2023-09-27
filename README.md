@@ -193,6 +193,40 @@ Host github.com
 
 > - use `ctrl-x` to exit and then press `y` to save
 
+
+Now we need to add this to our github account online! 
+
+I am copying the steps from this tutorial 
+[here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+      1. 
+      **don't copy the $ **
+
+      ```
+        $ pbcopy < ~/.ssh/id_ed25519.pub
+        # Copies the contents of the id_ed25519.pub file to your clipboard
+
+      ```
+
+
+***Tip: If pbcopy isn't working, you can locate the hidden .ssh folder, open the file in your favorite text editor, and copy it to your clipboard.***
+      2. In the upper-right corner of any page, click your profile photo, then click Settings.
+
+      3. In the "Access" section of the sidebar, click  SSH and GPG keys.
+
+      4.  Click New SSH key or Add SSH key
+
+      5. In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal laptop, you might call this key "Personal laptop".
+
+      6. In the "Key" field, paste your public key.
+
+      7. Click Add SSH key.
+
+
+
+
+
+
+
 ## 4. Intro to git
 
 Now that you have set up `git` we can learn what it does. `git` is a version control system. 
