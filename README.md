@@ -446,8 +446,7 @@ To create a brand new project containing a Makefile, compilable source file, and
 - Next run the helper script for the board you want to target. `./helper.py create MyProjects/<Project Name> --board <Target Board>`
   - For example, if we are creating a project called MyProj for the Daisy Patch, we would  
   run `./helper.py create MyProjects/MyProj --board seed`
-  
-<img width=85% src="https://github.com/electro-smith/WikiScratch/blob/main/resources/helper.png">  
+ 
   
 The `<Target Board>` option can be any of the following:
 
@@ -457,9 +456,10 @@ The `<Target Board>` option can be any of the following:
  - [petal](https://www.electro-smith.com/daisy/petal)
  - [pod](https://www.electro-smith.com/daisy/pod)
  - [seed](https://www.electro-smith.com/daisy/daisy)
- - [versio](https://www.noiseengineering.us/versio)
+ - [version](https://www.noiseengineering.us/versio)
 
 To see a full list of available board targets, enter the following command:
+
 ```
 ./helper.py -h
 ```
