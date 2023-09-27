@@ -354,7 +354,7 @@ For example if this repo were a musical composition I could create a branch wher
 
 Lastly, we want to push our repo to github. For this we will have to go to github.com and create a repo so we can push our local repo to it. 
 
-Follow this Step-by-step tutorial can be found [here](https://docs.github.com/en/get-started/quickstart/create-a-repo) **WAIT** stop at the Commit First change line. 
+Follow this Step-by-step tutorial can be found [here](https://docs.github.com/en/get-started/quickstart/create-a-repo) **WAIT** stop at the Commit First change line. ***DO NOT DO THIS STEP***
 
 
 
