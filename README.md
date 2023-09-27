@@ -468,7 +468,7 @@ To see a full list of available board targets, enter the following command:
 All that being said here is the command we want to use 
 
 
- `python helper.py create MyProjects/MyProj --board seed`
+ `python3 helper.py create MyProjects/MyProj --board seed`
 ### 2. Compiling
 - Open your project in VS Code.
   - Open VS Code.
