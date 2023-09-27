@@ -278,7 +278,7 @@ looks like our file isnt in the repo but there is a helpful hint that tells us y
 
 So now that we have added it to the commit let's make a commit. 
 
-```git commit -m "My First Commit!"```
+```git commit -m "My First Commit"```
 
 ![](photos/commit.png)
 
