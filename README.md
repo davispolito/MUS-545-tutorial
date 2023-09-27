@@ -201,11 +201,11 @@ I am copying the steps from this tutorial
       1. 
       **don't copy the $ **
 
-      ```
-        $ pbcopy < ~/.ssh/id_ed25519.pub
-        # Copies the contents of the id_ed25519.pub file to your clipboard
+```
+  $ pbcopy < ~/.ssh/id_ed25519.pub
+  # Copies the contents of the id_ed25519.pub file to your clipboard
 
-      ```
+```
 
 
 ***Tip: If pbcopy isn't working, you can locate the hidden .ssh folder, open the file in your favorite text editor, and copy it to your clipboard.***
@@ -354,14 +354,17 @@ For example if this repo were a musical composition I could create a branch wher
 
 Lastly, we want to push our repo to github. For this we will have to go to github.com and create a repo so we can push our local repo to it. 
 
-Step-by-step tutorial can be found [here](https://docs.github.com/en/get-started/quickstart/create-a-repo) 
+Follow this Step-by-step tutorial can be found [here](https://docs.github.com/en/get-started/quickstart/create-a-repo) **WAIT** stop at the Commit First change line. 
+
+
+
 
 I suggest making this private. 
  
-After you have set that up github has some helpful suggestions for code you might want to use. 
+After you have set that up github has some helpful suggestions for code you NEED to use!
 
 ```
-git remote add origin git@github.com:davispolito/dummy.git
+git remote add origin <your git thing>
 git branch -M main
 git push -u origin main
 ```
