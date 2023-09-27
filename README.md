@@ -445,7 +445,7 @@ To create a brand new project containing a Makefile, compilable source file, and
   run `cd  /c/Users/ES/Documents/DaisyExamples`.
 - Next run the helper script for the board you want to target. `./helper.py create MyProjects/<Project Name> --board <Target Board>`
   - For example, if we are creating a project called MyProj for the Daisy Patch, we would  
-  run `./helper.py create MyProjects/MyProj --board patch`
+  run `./helper.py create MyProjects/MyProj --board seed`
   
 <img width=85% src="https://github.com/electro-smith/WikiScratch/blob/main/resources/helper.png">  
   
@@ -465,6 +465,10 @@ To see a full list of available board targets, enter the following command:
 ```
 
 
+All that being said here is the command we want to use 
+
+
+ `python helper.py create MyProjects/MyProj --board seed`
 ### 2. Compiling
 - Open your project in VS Code.
   - Open VS Code.
