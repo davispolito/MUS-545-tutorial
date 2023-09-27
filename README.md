@@ -399,7 +399,7 @@ We will be creating our own programs and thus need have to set up a development 
 
 
 [1b. Installing the Toolchain on Mac](https://github.com/electro-smith/DaisyWiki/wiki/1b.-Installing-the-Toolchain-on-Mac)
-- [You can get the installer here](https://daisy.nyc3.cdn.digitaloceanspaces.com/installers/DaisyToolchain-macos-installer-x64-0.2.0.pkg)
+- [You can get the installer here **CLICK ME**](https://daisy.nyc3.cdn.digitaloceanspaces.com/installers/DaisyToolchain-macos-installer-x64-0.2.0.pkg)
 
   > This file will show up as quarantined if you just click on it. If you right-click Open it you will get a prompt asking you if you really want to open it and then it'll run fine. Alternatively if you just click it you'll get an error until you remove it from quarantine in the settings. 
 
@@ -476,7 +476,7 @@ All that being said here is the command we want to use
   - Choose your project folder. For example, the MyProj folder from step 3.
 - Write the code for your example.  
 (The default code is a simple passthrough, you can try compiling and flashing it!).
-- Build your example with `Ctrl-shift-B`
+- Build your example with `CMD-shift-B`
 - If you receive an error related to libDaisy or DaisySP, make sure to build your libs by running `task build_all`. This will build the libraries.
 - Refer to step 3 of the [Development Environment](https://github.com/electro-smith/DaisyWiki/wiki/1.-Setting-Up-Your-Development-Environment#4-Run-the-Blink-Example) guide for help flashing your project to the Daisy.
 
