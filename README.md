@@ -601,7 +601,9 @@ C_INCLUDES += -I../../../LEAF/leaf/Src
 
 ```
 
-in order to build in VSCode we press ```CMD-P``` and type ```task build_all```
+In order to build.  In VSCode we press ```CMD-P``` (as a hotkey) and type ```task build_all```
+
+
 
 Now you pray to the Computer and if all is well you will get output that looks something like this 
 ![](photos/build_all.png)
