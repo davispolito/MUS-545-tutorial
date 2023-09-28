@@ -553,7 +553,7 @@ Under the "includePath" property you will notice I have added a the path to LEAF
 ```
  , "${workspaceFolder}/../../../LEAF/leaf//**"
 ```
-**note the `,` before entering the data within the `"` (this data type is called a string (it is called a string because it is a string of characters (characters are their own data type too(parentheseses)))) this is important to have as it seperates the task froms each other**
+**note the `,` before entering the data within the `"` this is important to have as it seperates the task froms each other**
 
 Now we will open the ```tasks.json``` file and edit that 
 
@@ -593,13 +593,17 @@ So, at the end of our tasks we need to add this
     }
 
 ```
-**note the `,` before entering the `{` (commonly referred to as curly brace) this is important to have as it seperates the task froms each other**
+**note the `,` before entering the `{` (commonly referred to as curly brace) this is important to have as it seperates the task froms each other. Also note that the whole thing within curly braces should come before the `]` and "version 2.0.0" lines**
 
 It should look something  like this
 
 ![](photos/tasks.png)
 
-Now we can add build_leaf as a necessary dependency
+Now we can add "build_leaf" as a necessary dependency
+
+```
+build_leaf
+```
 
 **note that you will need to add a `,` before entering the build_leaf string so that the computer understands it to be a seperate thing from the other strings**
 
@@ -608,14 +612,16 @@ under "build_all" and "build_all_debug" add the "build_leaf" task to the depends
 
 Now we are almost there! 
 
-Now VSCode knows that these libraries must be built with the tasks but our project has no information about how to compile LEAF. Compilation is the process that turns our C code into the actual 0s and 1s that our CPU can read. This task is accomplished by a Makefile. Now if you add these lines to the Makefile before the include you should be able to build
+Now VSCode knows that these libraries must be built with the tasks but our project has no information about how to compile LEAF. Compilation is the process that turns our C code into the actual 0s and 1s that our CPU can read. This task is accomplished by a Makefile. Now if you add these lines to the Makefile before the line that says `include $(SYSTEM_FILES_DIR)/Makefile` you should be able to build
 
 ```
 LIBS += -lleaf
 LIBDIR += -L ../../../LEAF/leaf/build
-C_INCLUDES += -I../../../LEAF/leaf/Src
+C_INCLUDES += -I../../../LEAF/leaf/Src -I../../../LEAF/leaf/Inc/  -I../../../LEAF/leaf/ 
 
 ```
+
+your Makefile should look like this
 
 In order to build.  In VSCode we press ```CMD-P``` (as a hotkey) and type ```task build_all```
 
