@@ -464,11 +464,11 @@ To create a brand new project containing a Makefile, compilable source file, and
 - Open a terminal window. On macOS, this is terminal. On Windows, this is git bash (installed in the Getting Started guide).
 - Move into your DaisyExamples folder with `cd <DaisyExamples location>`
   - For example if DaisyExamples is located on your Desktop,  
-  run `cd  /c/Users/ES/Documents/DaisyExamples`.
+  run `cd  ~/DaisyExamples`.
 - Next run the helper script for the board you want to target. `python3 helper.py create MyProjects/<Project Name> --board <Target Board>`
 
 
-For our purposes that would be the daisy seed and you can call the function like so 
+For our purposes that would be the daisy pod and you can call the function like so 
 
 `python3 helper.py create MyProjects/MyProj --board pod`
 
