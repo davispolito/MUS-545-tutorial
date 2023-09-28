@@ -250,7 +250,15 @@ In order to make a commit we must first make a repo and add some stuff to it.
 
 So lets `cd` to a new folder that we are going to use to create a dummy git repo. 
 
+we probably also need to make that that folder so do this
 
+
+```
+mkdir dummy
+cd dummy
+```
+
+now you should get something like this /users/you/Desktop/dev/dummy/ if you run `pwd`
 **NOTE DO NOT USE ANYTHING THAT SAYS DAVIS OR DP9443 OR IN ANY WAY IS COPIED FROM THE PICTURES. ALL INFORMATION TYPEED INTO YOUR COMPUTER MUST BE SPECIFIC TO YOUR COMPUTER**
 
 Once in that folder we can call ```git init``` to create a new repo 
@@ -420,14 +428,9 @@ We will be creating our own programs and thus need have to set up a development 
 Now if we go back to the [1. Setting Up Your Development Environment](https://github.com/electro-smith/DaisyWiki/wiki/1.-Setting-Up-Your-Development-Environment)
  wiki we can pull the source for DaisyExamples
 
-
-
-This command clones the repo to our Desktop but you  replace <FOLDER FOR THIS CLASS>  to be wherever you want it to be for the class. 
-
-
-***Note: any time there is something inside of these `<>` arrow thingies it means that there is something specific to your computer or command that you need to use rather than what is in the `<>`***
+We will use this command to get the DaisyExamples file onto our local machine. First we must navigate or `cd` to the dev folder we have previously created. This has 
 ```
-git clone --recurse-submodules https://github.com/electro-smith/DaisyExamples <FOLDER FOR THIS CLASS>
+git clone --recurse-submodules https://github.com/electro-smith/DaisyExamples 
 ```
 
 
@@ -505,7 +508,7 @@ All that being said here again is the command we want to use
 - Write the code for your example.  
 (The default code is a simple passthrough, you can try compiling and flashing it!).
 - Build your example with `CMD-shift-B`
-- If you receive an error related to libDaisy or DaisySP, make sure to build your libs by running `task build_all`. This will build the libraries.
+- If you receive an error related to libDaisy or DaisySP, make sure to build your libs by running pressing `CMD-Shift-P` then `task build_all` in the thing that pops up. This will build the libraries.
 - Refer to step 3 of the [Development Environment](https://github.com/electro-smith/DaisyWiki/wiki/1.-Setting-Up-Your-Development-Environment#4-Run-the-Blink-Example) guide for help flashing your project to the Daisy.
 
 ### 3. Troubleshooting
@@ -533,7 +536,7 @@ We will use this directory structure to access LEAF from our projects.
 git clone git@github.com:spiricom/LEAF.git
 ```
 
-![leaf](leaf.png)
+![leaf](photos/leaf.png)
 *press the blue code button to get the link needed for cloning*
 
  
