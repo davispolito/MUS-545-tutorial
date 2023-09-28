@@ -440,12 +440,6 @@ helper.py is a python script from DaisyExamples that can be used for several hel
 - Mac users may see `Permission denied` in the console when trying to run the helper script. A solution to this is to first run `chmod +x helper.py`
 - Another error that may appear is `ImportError: No module named pathlib`. A solution is to add "python3" in front of the command, so you will need to run `python3 ./helper.py create MyProjects/<Project Name> --board <Target Board>`
 
-
-If you don't care about what's going on this is the command to use for this step 
-
-`python3 helper.py create MyProjects/MyProj --board seed`
-
-
 To create a brand new project containing a Makefile, compilable source file, and debug resources for VisualStudio using VisualGDB, and for VS Code using Cortex Debug:
 
 - Open a terminal window. On macOS, this is terminal. On Windows, this is git bash (installed in the Getting Started guide).
@@ -453,9 +447,12 @@ To create a brand new project containing a Makefile, compilable source file, and
   - For example if DaisyExamples is located at `C:\\Users\ES\Documents\DaisyExamples`,  
   run `cd  /c/Users/ES/Documents/DaisyExamples`.
 - Next run the helper script for the board you want to target. `python3 helper.py create MyProjects/<Project Name> --board <Target Board>`
-  - For example, if we are creating a project called MyProj for the Daisy Patch, we would  
-  run `python3 helper.py create MyProjects/MyProj --board seed`
- 
+For our purposes that would be the daisy seed and you can call the function like so 
+
+`python3 helper.py create MyProjects/MyProj --board seed`
+
+it is important that you call create like this `MyProjects/MyProj` as we will rely on this directory structure later. The actual names are unimportant but the fact that it is called with a directory inside a directory is. 
+
   
 The `<Target Board>` option can be any of the following:
 
@@ -477,6 +474,8 @@ To see a full list of available board targets, enter the following command:
 All that being said here again is the command we want to use 
 
  `python3 helper.py create MyProjects/MyProj --board seed`
+
+ Again it is important that you call create like this `MyProjects/MyProj` as we will rely on this directory structure later. The actual names are unimportant but the fact that it is called with a directory inside a directory is. 
 ### 2. Compiling
 - Open your project in VS Code.
   - Open VS Code.
