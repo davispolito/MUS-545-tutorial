@@ -247,6 +247,9 @@ In order to make a commit we must first make a repo and add some stuff to it.
 
 So lets `cd` to a new folder that we are going to use to create a dummy git repo. 
 
+
+**NOTE DO NOT USE ANYTHING THAT SAYS DAVIS OR DP9443 OR IN ANY WAY IS COPIED FROM THE PICTURES. ALL INFORMATION TYPEED INTO YOUR COMPUTER MUST BE SPECIFIC TO YOUR COMPUTER**
+
 Once in that folder we can call ```git init``` to create a new repo 
 
 ![](photos/init.png)
@@ -292,7 +295,7 @@ From the command line, run ```git config --global core.editor "code --wait"```
 
 Now you can run ```git config --global -e``` and use VS Code as editor for configuring Git.
 
-Add the following at the end of the file to use VS Code as diff tool. 
+Add the following at the end of the file to use VS Code as diff tool.  And then close the text editor
 
 ```
 [diff]
@@ -435,7 +438,13 @@ helper.py is a python script from DaisyExamples that can be used for several hel
 
 **macOS troubleshooting:** 
 - Mac users may see `Permission denied` in the console when trying to run the helper script. A solution to this is to first run `chmod +x helper.py`
-- Another error that may appear is `ImportError: No module named pathlib`. A solution is to add "python3" in front of the command, so you will need to run `python3 ./helper.py create MyProjects/<Project Name> --board <Target Board>
+- Another error that may appear is `ImportError: No module named pathlib`. A solution is to add "python3" in front of the command, so you will need to run `python3 ./helper.py create MyProjects/<Project Name> --board <Target Board>`
+
+
+If you don't care about what's going on this is the command to use for this step 
+
+`python3 helper.py create MyProjects/MyProj --board seed`
+
 
 To create a brand new project containing a Makefile, compilable source file, and debug resources for VisualStudio using VisualGDB, and for VS Code using Cortex Debug:
 
@@ -443,9 +452,9 @@ To create a brand new project containing a Makefile, compilable source file, and
 - Move into your DaisyExamples folder with `cd <DaisyExamples location>`
   - For example if DaisyExamples is located at `C:\\Users\ES\Documents\DaisyExamples`,  
   run `cd  /c/Users/ES/Documents/DaisyExamples`.
-- Next run the helper script for the board you want to target. `./helper.py create MyProjects/<Project Name> --board <Target Board>`
+- Next run the helper script for the board you want to target. `python3 helper.py create MyProjects/<Project Name> --board <Target Board>`
   - For example, if we are creating a project called MyProj for the Daisy Patch, we would  
-  run `./helper.py create MyProjects/MyProj --board seed`
+  run `python3 helper.py create MyProjects/MyProj --board seed`
  
   
 The `<Target Board>` option can be any of the following:
@@ -465,8 +474,7 @@ To see a full list of available board targets, enter the following command:
 ```
 
 
-All that being said here is the command we want to use 
-
+All that being said here again is the command we want to use 
 
  `python3 helper.py create MyProjects/MyProj --board seed`
 ### 2. Compiling
@@ -516,9 +524,9 @@ If you open your Project folder in VSCode you will see a folder called .vscode. 
 Under the "includePath" property you will notice I have added a the path to LEAF. If you are in the directory as stated above you can simply copy this line into your file. Note there are two seperate configurations. One is for windows and one for mac. Technically you only need to set this for the mac one but we might as well do it for both. 
 
 ```
-"${workspaceFolder}/../../../LEAF/leaf//**"
+ , "${workspaceFolder}/../../../LEAF/leaf//**"
 ```
-
+**note the `,` before entering the data within the `"` (this data type is called a string (it is called a string because it is a string of characters (characters are their own data type too(parentheseses)))) this is important to have as it seperates the task froms each other**
 
 Now we will open the ```tasks.json``` file and edit that 
 
@@ -544,7 +552,7 @@ You can also find these things using ```CMD-F``` and typing them in.
 So, at the end of our tasks we need to add this 
 
 ```
-{
+, {
       "command": "make",
       "label": "build_leaf",
       "options": {
@@ -558,12 +566,15 @@ So, at the end of our tasks we need to add this
     }
 
 ```
+**note the `,` before entering the `{` (commonly referred to as curly brace) this is important to have as it seperates the task froms each other**
 
 It should look something  like this
 
 ![](photos/tasks.png)
 
 Now we can add build_leaf as a necessary dependency
+
+**note that you will need to add a `,` before entering the build_leaf string so that the computer understands it to be a seperate thing from the other strings**
 
 under "build_all" and "build_all_debug" add the "build_leaf" task to the dependsOn array. 
 ![](photos/build_leaf.png)
