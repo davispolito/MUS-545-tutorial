@@ -99,6 +99,7 @@ the output will look something like this at the end
 ![](photos/brewpath.png)
 
 If you look at **Next Steps** it will tell you to add homebrew to your PATH. It does this by putting it into your .zprofile. The zprofile is a file that gets run by your terminal everytime it opens. 
+
 ***Note: any time there is something inside of these `<>` arrow thingies it means that there is something specific to your computer or command that you need to use rather than what is in the `<>`***
 
 ```
@@ -274,6 +275,7 @@ Let's see if that changed anything in our repo!
 You can check the repo using the ```git status ``` command
 
 ![](photos/status.png)
+
 ***Note: any time there is something inside of these `<>` arrow thingies it means that there is something specific to your computer or command that you need to use rather than what is in the `<>`***
 
 looks like our file isnt in the repo but there is a helpful hint that tells us you can use the ```git add <file>``` command.
@@ -338,6 +340,7 @@ If you use the ```git log``` command you can now see that we have two commits we
 
 
 ![](photos/log.png)
+
 ***Note: any time there is something inside of these `<>` arrow thingies it means that there is something specific to your computer or command that you need to use rather than what is in the `<>`***
 
 Now if we wanted to return to the previous commit we could just copy it and call the ```git checkout <hash>``` command
@@ -369,6 +372,7 @@ Follow this Step-by-step tutorial can be found [here](https://docs.github.com/en
 I suggest making this private. 
  
 After you have set that up github has some helpful suggestions for code you NEED to use!
+
 ***Note: any time there is something inside of these `<>` arrow thingies it means that there is something specific to your computer or command that you need to use rather than what is in the `<>`***
 ```
 git remote add origin <your git thing>
@@ -449,10 +453,13 @@ helper.py is a python script from DaisyExamples that can be used for several hel
 
 **macOS troubleshooting:** 
 - Mac users may see `Permission denied` in the console when trying to run the helper script. A solution to this is to first run `chmod +x helper.py`
+
 ***Note: any time there is something inside of these `<>` arrow thingies it means that there is something specific to your computer or command that you need to use rather than what is in the `<>`***
-- Another error that may appear is `ImportError: No module named pathlib`. A solution is to add "python3" in front of the command, so you will need to run `python3 ./helper.py create MyProjects/<Project Name> --board <Target Board>`
+- Another error that may appear is `ImportError: No module named pathlib`. A solution is to add "python3" in front of the command, so you will need to run `python3 helper.py create MyProjects/<Project Name> --board <Target Board>`
 
 To create a brand new project containing a Makefile, compilable source file, and debug resources for VisualStudio using VisualGDB, and for VS Code using Cortex Debug:
+
+
 ***Note: any time there is something inside of these `<>` arrow thingies it means that there is something specific to your computer or command that you need to use rather than what is in the `<>`***
 - Open a terminal window. On macOS, this is terminal. On Windows, this is git bash (installed in the Getting Started guide).
 - Move into your DaisyExamples folder with `cd <DaisyExamples location>`
