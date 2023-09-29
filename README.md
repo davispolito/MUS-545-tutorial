@@ -199,7 +199,7 @@ Host github.com
 Now we need to add this to our github account online! 
 
 I am copying the steps from this tutorial 
-[here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+[here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account). This link might be more useful than my tutorial as it has nice pictures.
       1. 
       **don't copy the $ **
 
@@ -371,17 +371,14 @@ For example if this repo were a musical composition I could create a branch wher
 
 
 Lastly, we want to push our repo to github. For this we will have to go to github.com and create a repo so we can push our local repo to it. 
-
+**WAIT** I am about to tell you to do a tutorial that i didn't copy because it has nice pictures. stop at the Commit First change line. You'll get an annoying error *** AGAIN DO NOT ADD AN INITIAL COMMIT ONLINE***  
 Follow this Step-by-step tutorial can be found [here](https://docs.github.com/en/get-started/quickstart/create-a-repo) **WAIT** stop at the Commit First change line. ***DO NOT DO THIS STEP***
-
-
-
 
 I suggest making this private. 
  
 After you have set that up github has some helpful suggestions for code you NEED to use!
 
-***Note: any time there is something inside of these `<>` arrow thingies it means that there is something specific to your computer or command that you need to use rather than what is in the `<>`***
+***Note: any time there is something inside of these `<>` arrow thingies it means that there is something specific to your computer or command that you need to use rather than what is in the `<>`. the final command should not have the `<>` in it***
 ```
 git remote add origin <your git thing>
 git branch -M main
@@ -391,6 +388,39 @@ git push -u origin main
 so lets do that! 
 
 ![](photos/push.png)
+If you're output looks like this you're done
+
+If you're output complains about an error like this 
+![](photos/error1.png)
+Then you're not done. 
+run a `git pull` like it says and you will get another complaint
+
+![](photos/error2.png)
+
+so then you patiently do what it says again and call `git config pull.rebase false` and then another `git pull` and you get an error again 
+![](photos/error3.png)
+
+and then finally you give up. 
+
+
+i mean you try another command `git pull origin main`
+
+![](photos/error4.png)
+
+and it still complains and then finally you run 
+
+```
+git pull origin main
+-allow-unrelated-histories
+```
+and it works! FINALLY!
+
+now you can push your code to github using the command below
+
+```
+git push -u origin main
+```
+
 
 now if we checkout our repo online we can see that our 2 commits are there!
 
